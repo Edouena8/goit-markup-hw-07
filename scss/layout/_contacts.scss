@@ -1,0 +1,29 @@
+.contacts {
+    @extend %reset-list;  
+
+    display: flex;
+    gap: 50px;
+  }
+ 
+  .contacts__link {
+    @extend %reset-link;
+
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--minor-txt-cl);
+ 
+    transition: color var(--animation);
+  
+ 
+    &:hover,
+    &:focus {
+     color: var(--accent-color);
+  }
+}

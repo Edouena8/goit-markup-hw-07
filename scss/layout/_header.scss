@@ -1,0 +1,29 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;;
+ }
+ 
+ .logo {
+    @extend %reset-link;
+    
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color); 
+ }
+ 
+ .header__logo {
+    margin-right: 93px;
+ }
+ 
+ .header__word {
+     color: #000000;
+ }
+
+ .contacts__icon {
+   fill: currentColor;
+   margin-right: 10px;
+ }

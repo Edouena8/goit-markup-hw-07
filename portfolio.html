@@ -20,7 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- Normalize end -->
-
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -28,39 +28,41 @@
     <!-- header section -->
 
     <header class="header">
-      <div class="container header-container">
-        <a class="logo link header-logo" href="./index.html" lang="en"
-          >Web<span class="word">Studio</span></a
-        >
+      <div class="container header__container">
+        <a 
+          class="logo header__logo" 
+          href="./index.html" 
+          lang="en">Web<span class="header__word">Studio</span>
+        </a>
 
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link  link" href="./index.html">Студія</a>
+        <nav class="nav">
+          <ul class="nav__list ">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="header-item">
-              <a class="header-link header-link-current link" href="./portfolio.html">Портфоліо</a>
+            <li class="nav__item">
+              <a class="nav__link  nav__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="#contacts">Контакти</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contacts list">
-          <li class="contacts-item">
+        <ul class="contacts ">
+          <li>
             <a 
-              class="contacts-link link" 
+              class="contacts__link" 
               href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="16" height="12">
+          <li>
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -72,153 +74,153 @@
 
     <!-- main section -->
     <main>
-      <section class="section">
+      <section class="portfolio">
         <div class="container">
-          <ul class="btn-list list">
-            <li class="btn-item">
-              <button class="portfolio-btn btn-active-current" type="button">Все</button>
+          <ul class="btn btn-list">
+            <li class="btn__item">
+              <button class="btn__portfolio btn__portfolio--active-current" type="button">Все</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn" type="button">Веб-сайти</button>
+            <li class="btn__item">
+              <button class="btn__portfolio" type="button">Веб-сайти</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn" type="button">Додатки</button>
+            <li class="btn__item">
+              <button class="btn__portfolio" type="button">Додатки</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn" type="button">Дизайн</button>
+            <li class="btn__item">
+              <button class="btn__portfolio" type="button">Дизайн</button>
             </li>
-            <li class="btn-item">
-              <button class="portfolio-btn" type="button">Маркетинг</button>
+            <li class="btn__item">
+              <button class="btn__portfolio" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="portfolio-list list">
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
-                <div class="portfolio-cards">
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="portfolio__cards">
                 <img
                 src="./images/Portfolio/img.jpg"
                 alt="Карточки трьох працівників"
                 width="370"
                 height="294"
               />
-              <div class="overlay"> 
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              <div class="portfolio__overlay"> 
+                <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               </div>
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title">Технокряк</h2>
+                <p class="portfolio__text">Веб-сайт</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/Portfolio/players.jpg"
                 alt="Два баскетболіста"
                 width="370"
                 height="294"
               />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title" lang="en">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio-text">Дизайн</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title" lang="en">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio__text">Дизайн</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item"> 
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item"> 
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/Portfolio/restaurant.jpg"
                 alt="Логотип ресторану"
                 width="370"
                 height="294"
               />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title" lang="en">Ресторан Seafood</h2>
-                <p class="portfolio-text">Додаток</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title" lang="en">Ресторан Seafood</h2>
+                <p class="portfolio__text">Додаток</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img 
                 src="./images/Portfolio/prime.jpg" 
                 alt="Навушники" 
                 width="370" 
                 height="294" />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title">Проєкт Prime</h2>
-                <p class="portfolio-text">Маркетинг</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title">Проєкт Prime</h2>
+                <p class="portfolio__text">Маркетинг</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img 
                 src="./images/Portfolio/boxes.jpg" 
                 alt="Бокси" 
                 width="370" 
                 height="294" />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title">Проєкт Boxes</h2>
-                <p class="portfolio-text">Додаток</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title">Проєкт Boxes</h2>
+                <p class="portfolio__text">Додаток</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/Portfolio/computer.jpg"
                 alt="Монітор"
                 width="370"
                 height="294"
               />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
-                <p class="portfolio-text">Веб-сайт</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title" lang="en">Inspiration has no Borders</h2>
+                <p class="portfolio__text">Веб-сайт</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link link" href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/Portfolio/book.jpg"
                 alt="Розкрита книга"
                 width="370"
                 height="294"
               />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title" lang="en">Видання Limited Edition</h2>
-                <p class="portfolio-text">Дизайн</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title" lang="en">Видання Limited Edition</h2>
+                <p class="portfolio__text">Дизайн</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/Portfolio/lab.jpg"
                 alt="Логотип проєкта ЛАБ"
                 width="370"
                 height="294"
               />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title" lang="en">Проєкт LAB</h2>
-                <p class="portfolio-text">Маркетинг</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title" lang="en">Проєкт LAB</h2>
+                <p class="portfolio__text">Маркетинг</p>
               </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="#" target="_blank" rel="noopener noreferrer">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
               <img
                 src="./images/Portfolio/notebook.jpg"
                 alt="Ноутбук"
                 width="370"
                 height="294"
               />
-              <div class="portfolio-wrapper">
-                <h2 class="portfolio-title" lang="en">Growing Business</h2>
-                <p class="portfolio-text">Додаток</p>
+              <div class="portfolio__wrapper">
+                <h2 class="portfolio__title" lang="en">Growing Business</h2>
+                <p class="portfolio__text">Додаток</p>
               </div>
               </a>
             </li>
@@ -233,103 +235,103 @@
       <div class="container">
         <div class="footer-contr">
           <div class="address-contr">
-        <a class="footer-logo logo link" href="./index.html" lang="en">Web<span class="footer-word">Studio</span></a>
+            <a class="footer__logo logo" href="./index.html" lang="en">Web<span class="footer__word">Studio</span></a>
         
 
-        <address class="address" id="contacts">
-          <p class="address-text text">м. Київ, пр-т Лесі Українки, 26</p>
+        <address class="footer-address" id="contacts">
+          <p class="footer-address__text text">м. Київ, пр-т Лесі Українки, 26</p>
 
-          <ul class="address-list list">
-            <li class="address-item">
-              <a class="address-link text link link-mail" href="maito:info@example.com"
+          <ul class="footer-address__list">
+            <li class="footer-address__item">
+              <a class="footer-address__link text link-mail" href="maito:info@example.com"
                 >info@example.com</a>
             </li>
-            <li class="address-item">
-              <a class="address-link text link" href="tel:+38091111111">+38 099 111 11 11</a>
+            <li class="footer-address__item">
+              <a class="footer-address__link text" href="tel:+38091111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
           </div>
 
           <div class="footer-socials">
-            <p class="footer-text">приєднуйтесь</p>
-            <ul class="address-socials-list list">
-              <li class="address-socials-item">
+            <p class="footer-socials__text">приєднуйтесь</p>
+            <ul class="footer-socials__list">
+              <li class="footer-socials__item">
                 <a 
-                class="address-socials-link link"
+                class="footer-socials__link"
                 href="instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="instagram"
                 >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
               </li>
-              <li class="address-socials-item">
+              <li class="footer-socials__item">
                 <a 
-                class="address-socials-link link"
+                class="footer-socials__link"
                 href="twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="twitter"
                 >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
               </li>
-              <li class="address-socials-item">
+              <li class="footer-socials__item">
                 <a 
-                class="address-socials-link link"
+                class="footer-socials__link"
                 href="facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="facebook"
                 >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
               </li>
-              <li class="address-socials-item">
+              <li class="footer-socials__item">
                 <a 
-                class="address-socials-link link"
+                class="footer-socials__link"
                 href="linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin"
                 >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
               </li>
             </ul>
           </div>
-
-                    <!-- Form -->
-                    <div class="footer-form">
-                      <h2 class="footer-text">Підпишіться на розсилку</h2>
-                      <div class="form-wrap">
-                        <form class="form-container">
-                          <input 
-                            class="footer-form-imput" 
-                            type="email" 
-                            name="footer-user-email" 
-                            placeholder="E-mail" 
-                            required/>
-                          <button class="footer-form-btn" type="submit">Підписатися
-                            <svg class="footer-form-icon" width="24px" height="24px">
-                              <use href="./images/icons.svg#tg-icon"></use>
-                            </svg>
-                          </button>
-                        </form>
-                      </div>
-                    </div>
           
-                    <!-- End -->
+          <!-- Form -->
+          <div class="footer-form">
+            <h2 class="footer-form__text">Підпишіться на розсилку</h2>
+            
+              <form class="footer-form__container">
+                <input 
+                  class="footer-form__imput" 
+                  type="email" 
+                  name="footer-user-email" 
+                  placeholder="E-mail" 
+                  required/>
+                <button class="footer-form__btn" type="submit">Підписатися
+                  <svg class="footer-form__icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#tg-icon"></use>
+                  </svg>
+                </button>
+              </form>
+            
+          </div>
+
+          <!-- End -->
         </div>
       </div>
     </footer>
